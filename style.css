@@ -7,3 +7,7 @@ body {
             #dadbd1 50%,
             #dadbd1 100%);
 }
+
+.menu-right {
+    background-color: #eaeaea;
+}
