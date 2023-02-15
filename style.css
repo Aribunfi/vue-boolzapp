@@ -6,8 +6,58 @@ body {
             #009688 50%,
             #dadbd1 50%,
             #dadbd1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.menu-left {
+    background-color: #eaeaea;
+
 }
 
 .menu-right {
     background-color: #eaeaea;
+    color: #b1b1b1;
+}
+
+.menu-top {
+    background-color: #eaeaea;
+
+}
+
+
+#avatar {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.notify-banner {
+    background-color: #8edafc;
+}
+
+.search-bar {
+    background-color: #ffffff;
+}
+
+.user-list {
+    background-color: white;
+}
+
+.user-list>img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;
+
+}
+
+
+
+.bottom-speach {
+    background-image: url('img/mine.jpg');
 }
