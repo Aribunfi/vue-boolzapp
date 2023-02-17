@@ -33,34 +33,36 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-8">
-                <div class="col-3">
+            <div class="col-12">
+                <div class="col-4">
                     <nav>
                         <div class="menu-left">
                             <img src="./img/avatar_io.jpg" alt="" id="avatar">
                             <h3>Sofia</h3>
                         </div>
                         <div class="menu-right">
-                            <a href="#"><i class="fa-solid fa-circle-notch"></i></a>
-                            <a href="#"><i class="fa-solid fa-message"></i></a>
-                            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            <a href="#"><i class="fa-solid fa-circle-notch fa-xl"></i></a>
+                            <a href="#"><i class="fa-solid fa-message fa-xl"></i></a>
+                            <a href="#"><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></a>
                         </div>
                     </nav>
 
                     <div class="notify-banner">
-                        <span><i class="fa-solid fa-bell-slash"></i></span>
-                        <h2>Ricevi notifiche di nuovi messaggi</h2>
-                        <a href="#">Attiva notifiche desktop</a>
+                        <button id="bell"><i class="fa-solid fa-bell-slash fa-xl"></i></button>
+                        <h4>Ricevi notifiche di nuovi messaggi</h4>
+                        <a id="notification-link" href="#">Attiva notifiche desktop</a>
+
                     </div>
 
 
                     <div class="search-bar">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text">
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
                     <ul class="user-list">
-                        <li class="user-list-item">
+                        <li v-for="(contact, contactIndex) in contacts" v-show="contact.visible" class="user-list-item">
+                            {{ contact.name }}
                             <img src="" alt="">
                             <h3></h3>
                             <h4></h4>
@@ -70,27 +72,29 @@
 
                     </ul>
                 </div>
-
-
-                <div class="col-5">
-                    <div class="menu-top">
-                        <img src="./img/avatar_1.jpg" alt="Michele" id="avatar">
-                        <h3>Michele</h3>
-                        <h4>Ultimo accesso oggi alle 12:00</h4>
-                        <div class="menu-right">
-                            <a href="#"> <a href="#"><i class=" fa-solid fa-magnifying-glass"></i></a>
-                            </a>
-                            <a href="#"><i class="fa-solid fa-paperclip"></i></a>
-                            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                <div class="col-8">
+                    <div class="top">
+                        <div class="menu-top">
+                            <img src="./img/avatar_1.jpg" alt="Michele" id="avatar">
+                            <h3>Michele</h3>
+                            <h4>Ultimo accesso oggi alle 12:00</h4>
+                            <div class="menu-right">
+                                <a href="#"> <a href="#"><i class=" fa-solid fa-magnifying-glass"></i></a>
+                                </a>
+                                <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="bottom-speech">
-                        <span><i class="fa-solid fa-message"></i></span>
-                        <span><i class="fa-solid fa-message"></i></span>
-                        <span><i class="fa-solid fa-message"></i></span>
+                        <span><i class="fa-solid fa-message fa-2xl"></i></span>
+                        <span><i class="fa-solid fa-message fa-2xl"></i></span>
+                        <span><i class="fa-solid fa-message fa-2xl"></i></span>
                     </div>
                 </div>
+
+
 
             </div>
         </div>

@@ -11,6 +11,18 @@ body {
     align-items: center;
 }
 
+.col-12 {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    vertical-align: middle;
+
+}
 
 
 .menu-left {
@@ -23,11 +35,20 @@ body {
     color: #b1b1b1;
 }
 
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .menu-top {
     background-color: #eaeaea;
 
 }
 
+.col-4 {
+    background-color: #ffffff;
+}
 
 #avatar {
     width: 100px;
@@ -36,10 +57,24 @@ body {
 
 .notify-banner {
     background-color: #8edafc;
+    display: flex;
+}
+
+#bell {
+    background-color: #f1fafe;
+    color: #8dd9fb;
+    border-radius: 50px;
+}
+
+#notification-link {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 35px;
 }
 
 .search-bar {
     background-color: #ffffff;
+
 }
 
 .user-list {
@@ -59,6 +94,6 @@ body {
 
 
 .bottom-speech {
-    background-color: #ad0606;
+    background: url(./img/mine.jpg);
     height: 300px;
 }
